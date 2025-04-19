@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🌍 Tourism Application Frontend
+Welcome to the frontend of the Tourism Application, built with Next.js and Tailwind CSS. This application provides a seamless user experience for travelers, offering features like user registration, login, and password reset functionalities.
 
-## Getting Started
+🚀 Features
+User Registration: Allows users to create an account with their email and password.
 
-First, run the development server:
+User Login: Secure login mechanism with token-based authentication.
 
-```bash
+Password Reset: OTP-based password reset process for account security.
+
+Responsive Design: Fully responsive design using Tailwind CSS for optimal viewing on all devices.
+
+📦 Installation
+Prerequisites
+Ensure you have the following installed:
+
+Node.js
+
+npm or Yarn
+
+Next.js
+
+Steps
+Clone this repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/tourism_frontend.git
+cd tourism_frontend
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Set up environment variables:
+
+Create a .env.local file in the root directory.
+
+Add the following line:
+
+ini
+Copy
+Edit
+NEXT_PUBLIC_API_URL=http://localhost:5000  # Replace with your backend URL
+Run the development server:
+
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Navigate to http://localhost:3000 in your browser to see the application in action.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔗 Backend Integration
+This frontend communicates with the backend API for user authentication and management. The backend repository is available at:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+API Base URL: http://localhost:5000/ (adjust if hosted elsewhere)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Available Routes
+POST /resetpassword: Resets the user's password after verifying the OTP.
 
-## Learn More
+POST /register: Registers a new user.
 
-To learn more about Next.js, take a look at the following resources:
+POST /login: Logs in an existing user.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Refer to the backend repository for more details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧱 Project Structure
+/pages: Contains route-based components like login, registration, and password reset pages.
 
-## Deploy on Vercel
+/components: Reusable UI components such as input fields and buttons.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+/styles: Global styles and Tailwind CSS configurations.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+/utils: Utility functions for tasks like form validation.
+
+/public: Static assets like images and icons.
+
+🤝 Contributing
+We welcome contributions! To contribute:
+
+Fork the repository.
+
+Create a new branch (git checkout -b feature-name).
+
+Make your changes.
+
+Commit your changes (git commit -am 'Add feature').
+
+Push to the branch (git push origin feature-name).
+
+Create a new Pull Request.
+
+Please ensure your code adheres to the project's coding standards and passes all tests.
+
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for more information.
